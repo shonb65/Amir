@@ -1,7 +1,7 @@
 from abc import ABC
 class Attack(ABC):
     def __init__(self):
-        self.recoveryTimeInSeconds : float= 0
+        self.recoveryTimeInSeconds : float = 0
         self.capableTargets = []
 
 
