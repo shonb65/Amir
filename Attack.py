@@ -14,6 +14,3 @@ class Attack(ABC):
 
     def addToCapableTargets(self,newTarget):
         self.capableTargets.append(newTarget)
-
-    def getCapableTargets(self):
-        return self.capableTargets
