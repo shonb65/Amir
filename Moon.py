@@ -3,11 +3,11 @@ from Attack import *
 
 class MoonFactory:
     def createMoon(self, moonType):
-        if moon_type == "full":
+        if moonType == "full":
             return FullMoon()
-        elif moon_type == "partial":
+        elif moonType == "partial":
             return PartialMoon()
-        elif moon_type == "red":
+        elif moonType == "red":
             return RedMoon()
         else:
             raise ValueError("Invalid moon type")
