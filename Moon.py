@@ -19,19 +19,19 @@ class Moon(ABC):
         
     def appendCapableAttacks(self, *args):
         self._capableAttacks + list(args)
-        
-   
+          
          
 class FullMoon(Moon):
     def __init__(self):
         super().__init__()
-        self._capableAttacks.append()
+        self.appendCapableAttacks()
 
 class PartialMoon(Moon):
     def __init__(self):
         super().__init__()
-        
+        self.appendCapableAttacks()
 
 class RedMoon(Moon):
     def __init__(self):
         super().__init__()
+        self.appendCapableAttacks()
