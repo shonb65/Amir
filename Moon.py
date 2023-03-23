@@ -1,4 +1,4 @@
-
+from abc import ABC
 
 class MoonFactory:
     def create_moon(self, moon_type):
@@ -12,8 +12,9 @@ class MoonFactory:
             raise ValueError("Invalid moon type")
 
 
-class Moon():
-    pass
+class Moon(ABC):
+    def __init__():
+        pass  
 
 class FullMoon(Moon):
     pass
