@@ -2,7 +2,7 @@ from abc import ABC
 from Attack import *
 
 class MoonFactory:
-    def create_moon(self, moon_type):
+    def createMoon(self, moon_type):
         if moon_type == "full":
             return FullMoon()
         elif moon_type == "partial":
@@ -19,8 +19,8 @@ class Moon(ABC):
         
     def appendCapableAttacks(self, *args):
         self._capableAttacks + list(args)
-          
-         
+
+    
 class FullMoon(Moon):
     def __init__(self):
         super().__init__()
