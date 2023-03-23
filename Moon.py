@@ -2,7 +2,7 @@ from abc import ABC
 from Attack import *
 
 class MoonFactory:
-    def createMoon(self, moon_type):
+    def createMoon(self, moonType):
         if moon_type == "full":
             return FullMoon()
         elif moon_type == "partial":
