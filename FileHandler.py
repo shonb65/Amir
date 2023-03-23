@@ -1,6 +1,6 @@
 class FileHandler:
     @staticmethod
-    def read_file(filename):
+    def readFile(filename):
         try:
             with open(filename, 'r') as f:
                 return f.read()
@@ -8,6 +8,6 @@ class FileHandler:
             print(f"Error: {filename} not found")
     
     @staticmethod
-    def write_file(filename, content):
+    def writeFile(filename, content):
         with open(filename, 'w') as f:
             f.write(content)
