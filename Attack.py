@@ -13,7 +13,7 @@ class Attack(ABC):
         return self.capableTargets
 
     def setRecoveryTime(self,newRecoveryTimeInSeconds):
-        self.recoveryTimeInSeconds=newRecoveryTimeInSeconds
+        self.recoveryTimeInSeconds = newRecoveryTimeInSeconds
 
     def addToCapableTargets(self,newTarget):
         self.capableTargets.append(newTarget)
