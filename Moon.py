@@ -1,4 +1,5 @@
 from abc import ABC
+from Attack import *
 
 class MoonFactory:
     def create_moon(self, moon_type):
@@ -10,18 +11,27 @@ class MoonFactory:
             return RedMoon()
         else:
             raise ValueError("Invalid moon type")
-
-
+    
+    
 class Moon(ABC):
-    def __init__():
-        pass  
-
+    def __init__(self):
+        self._capableAttacks = []
+        
+    def appendCapableAttacks(self, *args):
+        self._capableAttacks + list(args)
+        
+   
+         
 class FullMoon(Moon):
-    pass
+    def __init__(self):
+        super().__init__()
+        self._capableAttacks.append()
 
 class PartialMoon(Moon):
-    pass
+    def __init__(self):
+        super().__init__()
+        
 
 class RedMoon(Moon):
-    pass
-
+    def __init__(self):
+        super().__init__()
